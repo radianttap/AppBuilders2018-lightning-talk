@@ -9,5 +9,24 @@
 import UIKit
 
 final class GridCell: UICollectionViewCell, ReusableView {
-    
+	@IBOutlet private weak var label: UILabel!
+	@IBOutlet private weak var marker: UILabel!
+
+	private func cleanup() {
+		label.text = nil
+		marker.text = nil
+	}
+}
+
+extension GridCell {
+	override func prepareForReuse() {
+		super.prepareForReuse()
+
+		cleanup()
+	}
+
+	func populate(using model: Model) {
+		label.text = model.text
+		marker.text = model.marker
+	}
 }

@@ -11,7 +11,7 @@ import UIKit
 final class GridController: UICollectionViewController {
 	//	MARK: Data model
 
-	private var dataSource: [String] = []
+	private var dataSource: [Model] = [] //Model.dummies
 
 
 	//	MARK: View lifecycle
@@ -19,10 +19,11 @@ final class GridController: UICollectionViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		collectionView?.backgroundColor = view.backgroundColor
+//		collectionView?.backgroundColor = view.backgroundColor
 
 		let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
 		layout?.estimatedItemSize = CGSize(width: 150, height: 100)
+		layout?.itemSize = UICollectionViewFlowLayoutAutomaticSize
 
 		// Register cell classes
 //		self.collectionView?.register(GridCell.self)
@@ -35,11 +36,13 @@ final class GridController: UICollectionViewController {
 	}
 
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 0
+		return dataSource.count
 	}
 
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell: GridCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+		let model = dataSource[indexPath.item]
+		cell.populate(using: model)
 		return cell
 	}
 }
