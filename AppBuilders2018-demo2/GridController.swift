@@ -8,25 +8,46 @@
 
 import UIKit
 
-final class GridController: UICollectionViewController {
+final class GridController: UICollectionViewController, StoryboardLoadable {
+	private var waitStateView: UIView?
+
 	//	MARK: Data model
 
 	private var dataSource: [Model] = [] //Model.dummies
+	{
+		didSet {
+			if !isViewLoaded { return }
+			processDataUpdates()
+		}
+	}
 
+	private func processDataUpdates() {
+		collectionView?.reloadData()
+		collectionView?.backgroundView = dataSource.count == 0 ? waitStateView : nil
+	}
 
 	//	MARK: View lifecycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-//		collectionView?.backgroundColor = view.backgroundColor
+//		waitStateView = WaitStateView.nibInstance
+		processDataUpdates()
 
 		let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
 		layout?.estimatedItemSize = CGSize(width: 150, height: 100)
 		layout?.itemSize = UICollectionViewFlowLayoutAutomaticSize
 
-		// Register cell classes
-//		self.collectionView?.register(GridCell.self)
+		collectionView?.dataSource = self
+	}
+
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+
+		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+			[weak self] in
+			self?.dataSource = Model.dummies
+		}
 	}
 
 	// MARK: UICollectionViewDataSource

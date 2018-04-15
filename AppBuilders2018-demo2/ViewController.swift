@@ -9,5 +9,19 @@
 import UIKit
 
 final class ViewController: UIViewController {
+	@IBOutlet private weak var containerView: UIView!
+	@IBOutlet private var containerWidthConstraint: NSLayoutConstraint!
+
+	private var embeddedController: UIViewController?
 }
 
+extension ViewController {
+	@IBAction func initiateSearch(_ sender: UIButton) {
+		let vc = GridController.instantiate(fromStoryboardNamed: "Main")
+		embed(controller: vc, into: containerView)
+		embeddedController = vc
+
+//		containerWidthConstraint.isActive = false
+//		view.animateLayout()
+	}
+}

@@ -35,6 +35,7 @@ extension UIViewController {
 //				return lc
 //			}()
 		]
+		pv.addConstraints(constraints)
 		constraints.forEach { $0.isActive = true }
 	})
 		where T: UIViewController
