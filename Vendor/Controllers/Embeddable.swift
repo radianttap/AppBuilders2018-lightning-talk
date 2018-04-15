@@ -22,16 +22,18 @@ extension UIViewController {
 		let constraints: [NSLayoutConstraint] = [
 			v.topAnchor.constraint(equalTo: pv.topAnchor),
 			v.leadingAnchor.constraint(equalTo: pv.leadingAnchor),
-			{
-				let lc = v.bottomAnchor.constraint(equalTo: pv.topAnchor)
-				lc.priority = UILayoutPriority(rawValue: 999)
-				return lc
-			}(),
-			{
-				let lc = v.trailingAnchor.constraint(equalTo: pv.trailingAnchor)
-				lc.priority = UILayoutPriority(rawValue: 999)
-				return lc
-			}()
+			v.bottomAnchor.constraint(equalTo: pv.topAnchor),
+			v.trailingAnchor.constraint(equalTo: pv.trailingAnchor)
+//			{
+//				let lc = v.bottomAnchor.constraint(equalTo: pv.topAnchor)
+//				lc.priority = UILayoutPriority(rawValue: 999)
+//				return lc
+//			}(),
+//			{
+//				let lc = v.trailingAnchor.constraint(equalTo: pv.trailingAnchor)
+//				lc.priority = UILayoutPriority(rawValue: 999)
+//				return lc
+//			}()
 		]
 		constraints.forEach { $0.isActive = true }
 	})
