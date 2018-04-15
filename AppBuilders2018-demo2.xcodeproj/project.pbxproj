@@ -21,6 +21,8 @@
 		D00AF717208134C60011BB5E /* GridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AF716208134C60011BB5E /* GridController.swift */; };
 		D00AF719208134FB0011BB5E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AF718208134FB0011BB5E /* GridCell.swift */; };
 		D09175FB208394B500FC7BE8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09175FA208394B500FC7BE8 /* Model.swift */; };
+		D09175FD2083987200FC7BE8 /* WaitStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09175FC2083987200FC7BE8 /* WaitStateView.swift */; };
+		D09176002083987A00FC7BE8 /* WaitStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09175FE2083987A00FC7BE8 /* WaitStateView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		D00AF716208134C60011BB5E /* GridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridController.swift; sourceTree = "<group>"; };
 		D00AF718208134FB0011BB5E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 		D09175FA208394B500FC7BE8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D09175FC2083987200FC7BE8 /* WaitStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitStateView.swift; sourceTree = "<group>"; };
+		D09175FF2083987A00FC7BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WaitStateView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		D00AF6F3208123830011BB5E /* AppBuilders2018-demo2 */ = {
 			isa = PBXGroup;
 			children = (
+				D09175FC2083987200FC7BE8 /* WaitStateView.swift */,
+				D09175FE2083987A00FC7BE8 /* WaitStateView.xib */,
 				D00AF6F4208123830011BB5E /* AppDelegate.swift */,
 				D00AF6F6208123830011BB5E /* ViewController.swift */,
 				D00AF716208134C60011BB5E /* GridController.swift */,
@@ -184,6 +190,7 @@
 				D00AF6FF208123840011BB5E /* LaunchScreen.storyboard in Resources */,
 				D00AF6FC208123840011BB5E /* Assets.xcassets in Resources */,
 				D00AF6FA208123830011BB5E /* Main.storyboard in Resources */,
+				D09176002083987A00FC7BE8 /* WaitStateView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +204,7 @@
 				D00AF711208134530011BB5E /* StoryboardLoadable.swift in Sources */,
 				D00AF717208134C60011BB5E /* GridController.swift in Sources */,
 				D00AF715208134530011BB5E /* NibLoadable.swift in Sources */,
+				D09175FD2083987200FC7BE8 /* WaitStateView.swift in Sources */,
 				D00AF713208134530011BB5E /* DequeableView.swift in Sources */,
 				D00AF6F7208123830011BB5E /* ViewController.swift in Sources */,
 				D00AF6F5208123830011BB5E /* AppDelegate.swift in Sources */,
@@ -225,6 +233,14 @@
 				D00AF6FE208123840011BB5E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D09175FE2083987A00FC7BE8 /* WaitStateView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D09175FF2083987A00FC7BE8 /* Base */,
+			);
+			name = WaitStateView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
