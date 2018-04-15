@@ -18,6 +18,8 @@
 		D00AF713208134530011BB5E /* DequeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AF70D208134530011BB5E /* DequeableView.swift */; };
 		D00AF714208134530011BB5E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AF70E208134530011BB5E /* ReusableView.swift */; };
 		D00AF715208134530011BB5E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AF70F208134530011BB5E /* NibLoadable.swift */; };
+		D00AF717208134C60011BB5E /* GridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AF716208134C60011BB5E /* GridController.swift */; };
+		D00AF719208134FB0011BB5E /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AF718208134FB0011BB5E /* GridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D00AF70D208134530011BB5E /* DequeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DequeableView.swift; sourceTree = "<group>"; };
 		D00AF70E208134530011BB5E /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		D00AF70F208134530011BB5E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		D00AF716208134C60011BB5E /* GridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridController.swift; sourceTree = "<group>"; };
+		D00AF718208134FB0011BB5E /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 			children = (
 				D00AF6F4208123830011BB5E /* AppDelegate.swift */,
 				D00AF6F6208123830011BB5E /* ViewController.swift */,
+				D00AF716208134C60011BB5E /* GridController.swift */,
+				D00AF718208134FB0011BB5E /* GridCell.swift */,
 				D00AF6F8208123830011BB5E /* Main.storyboard */,
 				D00AF6FB208123840011BB5E /* Assets.xcassets */,
 				D00AF6FD208123840011BB5E /* LaunchScreen.storyboard */,
@@ -186,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00AF711208134530011BB5E /* StoryboardLoadable.swift in Sources */,
+				D00AF717208134C60011BB5E /* GridController.swift in Sources */,
 				D00AF715208134530011BB5E /* NibLoadable.swift in Sources */,
 				D00AF713208134530011BB5E /* DequeableView.swift in Sources */,
 				D00AF6F7208123830011BB5E /* ViewController.swift in Sources */,
@@ -193,6 +200,7 @@
 				D00AF712208134530011BB5E /* Embeddable.swift in Sources */,
 				D00AF714208134530011BB5E /* ReusableView.swift in Sources */,
 				D00AF710208134530011BB5E /* UIView-Extensions.swift in Sources */,
+				D00AF719208134FB0011BB5E /* GridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
