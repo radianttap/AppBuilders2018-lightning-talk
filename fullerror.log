@@ -1,0 +1,21 @@
+2018-04-16 08:16:19.545729+0200 AppBuilders2018-demo2[32258:1487074] [LayoutConstraints] 
+	
+	Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x60400008da20 UIView:0x7fae92b14aa0.width == 0   (active)>",
+    "<NSLayoutConstraint:0x600000091df0 UILabel:0x7fae8f602990'Please wait...'.leading == AppBuilders2018_demo2.WaitStateView:0x7fae8f60b2d0.leadingMargin + 32   (active)>",
+    "<NSLayoutConstraint:0x600000092020 AppBuilders2018_demo2.WaitStateView:0x7fae8f60b2d0.trailingMargin == UILabel:0x7fae8f602990'Please wait...'.trailing + 32   (active)>",
+    "<NSLayoutConstraint:0x60c000096530 H:|-(0)-[AppBuilders2018_demo2.WaitStateView:0x7fae8f60b2d0]   (active, names: '|':UIView:0x7fae92b14aa0 )>",
+    "<NSLayoutConstraint:0x60c000095860 AppBuilders2018_demo2.WaitStateView:0x7fae8f60b2d0.trailing == UIView:0x7fae92b14aa0.trailing   (active)>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x600000092020 AppBuilders2018_demo2.WaitStateView:0x7fae8f60b2d0.trailingMargin == UILabel:0x7fae8f602990'Please wait...'.trailing + 32   (active)>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
