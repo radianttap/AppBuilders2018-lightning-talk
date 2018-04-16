@@ -48,6 +48,7 @@ extension UIView {
 		]
 		addConstraints(constraints)
 		constraints.forEach { $0.isActive = true }
+		layoutIfNeeded()
 	}
 
 	func animateAlpha(to alpha: CGFloat, duration: TimeInterval = 0.3) {
