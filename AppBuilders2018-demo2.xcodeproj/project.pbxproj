@@ -77,17 +77,10 @@
 		D00AF6F3208123830011BB5E /* AppBuilders2018-demo2 */ = {
 			isa = PBXGroup;
 			children = (
-				D09175FC2083987200FC7BE8 /* WaitStateView.swift */,
 				D09175FE2083987A00FC7BE8 /* WaitStateView.xib */,
-				D00AF6F4208123830011BB5E /* AppDelegate.swift */,
 				D00AF6F6208123830011BB5E /* ViewController.swift */,
-				D00AF716208134C60011BB5E /* GridController.swift */,
-				D00AF718208134FB0011BB5E /* GridCell.swift */,
 				D00AF6F8208123830011BB5E /* Main.storyboard */,
-				D00AF6FB208123840011BB5E /* Assets.xcassets */,
-				D00AF6FD208123840011BB5E /* LaunchScreen.storyboard */,
-				D00AF700208123840011BB5E /* Info.plist */,
-				D09175FA208394B500FC7BE8 /* Model.swift */,
+				D09176132084C4B900FC7BE8 /* Other */,
 			);
 			path = "AppBuilders2018-demo2";
 			sourceTree = "<group>";
@@ -127,6 +120,21 @@
 				D00AF70F208134530011BB5E /* NibLoadable.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D09176132084C4B900FC7BE8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D09175FC2083987200FC7BE8 /* WaitStateView.swift */,
+				D00AF6F4208123830011BB5E /* AppDelegate.swift */,
+				D00AF716208134C60011BB5E /* GridController.swift */,
+				D00AF718208134FB0011BB5E /* GridCell.swift */,
+				D00AF6FB208123840011BB5E /* Assets.xcassets */,
+				D00AF6FD208123840011BB5E /* LaunchScreen.storyboard */,
+				D00AF700208123840011BB5E /* Info.plist */,
+				D09175FA208394B500FC7BE8 /* Model.swift */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

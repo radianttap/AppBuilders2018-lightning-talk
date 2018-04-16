@@ -10,21 +10,17 @@ import UIKit
 
 final class ViewController: UIViewController {
 	@IBOutlet private weak var containerView: UIView!
-	@IBOutlet private var containerWidthConstraint: NSLayoutConstraint!
 
-	private var embeddedController: UIViewController?
+	@IBOutlet private var containerWidthConstraint: NSLayoutConstraint!
 }
 
 extension ViewController {
 	@IBAction func initiateSearch(_ sender: UIButton) {
-//		let vc = GridController.instantiate(fromStoryboardNamed: "Main")
-//		embed(controller: vc, into: containerView)
-//		embeddedController = vc
 
 		let waitStateView = WaitStateView.nibInstance
 		containerView.embed(view: waitStateView)
 
-		containerWidthConstraint.isActive = false
-		view.animateLayout()
+//		containerWidthConstraint.isActive = false
+//		view.animateLayout()
 	}
 }
