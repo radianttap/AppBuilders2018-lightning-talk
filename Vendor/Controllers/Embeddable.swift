@@ -22,7 +22,7 @@ extension UIViewController {
 		let constraints: [NSLayoutConstraint] = [
 			v.topAnchor.constraint(equalTo: pv.topAnchor),
 			v.leadingAnchor.constraint(equalTo: pv.leadingAnchor),
-			v.bottomAnchor.constraint(equalTo: pv.topAnchor),
+			v.bottomAnchor.constraint(equalTo: pv.bottomAnchor),
 			v.trailingAnchor.constraint(equalTo: pv.trailingAnchor)
 //			{
 //				let lc = v.bottomAnchor.constraint(equalTo: pv.topAnchor)

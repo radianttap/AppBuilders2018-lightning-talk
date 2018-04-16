@@ -24,6 +24,15 @@ extension UIView {
 
 	//	Methods
 
+	func embed(view v: UIView) {
+		v.translatesAutoresizingMaskIntoConstraints = false
+		addSubview(v)
+		v.topAnchor.constraint(equalTo: topAnchor).isActive = true
+		v.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+		v.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+		v.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+	}
+
 	func animateAlpha(to alpha: CGFloat, duration: TimeInterval = 0.3) {
 		UIView.animate(withDuration: duration) {
 			[unowned self] in

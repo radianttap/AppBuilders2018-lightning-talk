@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,12 +31,12 @@
             <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="iJx-GT-gXa" firstAttribute="centerX" secondItem="2j3-hS-ujK" secondAttribute="centerX" id="46a-t8-Zr3"/>
-                <constraint firstItem="2j3-hS-ujK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c86-OA-48a" secondAttribute="leading" constant="8" id="JZa-rA-AjS"/>
+                <constraint firstItem="2j3-hS-ujK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TKY-Yo-E3p" secondAttribute="leadingMargin" constant="8" id="JZa-rA-AjS"/>
                 <constraint firstItem="2j3-hS-ujK" firstAttribute="centerX" secondItem="c86-OA-48a" secondAttribute="centerX" id="dZN-IT-ChQ"/>
                 <constraint firstItem="2j3-hS-ujK" firstAttribute="centerY" secondItem="c86-OA-48a" secondAttribute="centerY" id="ekx-Az-YaV"/>
                 <constraint firstItem="iJx-GT-gXa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="c86-OA-48a" secondAttribute="top" constant="8" id="fSO-2L-qCN"/>
                 <constraint firstItem="2j3-hS-ujK" firstAttribute="top" secondItem="iJx-GT-gXa" secondAttribute="bottom" constant="8" id="kL3-Oa-QVf"/>
-                <constraint firstItem="c86-OA-48a" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2j3-hS-ujK" secondAttribute="trailing" constant="8" id="lO5-Jw-zYv"/>
+                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2j3-hS-ujK" secondAttribute="trailing" constant="8" id="lO5-Jw-zYv"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

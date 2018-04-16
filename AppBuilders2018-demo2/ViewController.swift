@@ -17,11 +17,14 @@ final class ViewController: UIViewController {
 
 extension ViewController {
 	@IBAction func initiateSearch(_ sender: UIButton) {
-		let vc = GridController.instantiate(fromStoryboardNamed: "Main")
-		embed(controller: vc, into: containerView)
-		embeddedController = vc
+//		let vc = GridController.instantiate(fromStoryboardNamed: "Main")
+//		embed(controller: vc, into: containerView)
+//		embeddedController = vc
 
-//		containerWidthConstraint.isActive = false
-//		view.animateLayout()
+		let waitStateView = WaitStateView.nibInstance
+		containerView.embed(view: waitStateView)
+
+		containerWidthConstraint.isActive = false
+		view.animateLayout()
 	}
 }

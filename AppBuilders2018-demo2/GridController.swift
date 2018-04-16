@@ -31,7 +31,8 @@ final class GridController: UICollectionViewController, StoryboardLoadable {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-//		waitStateView = WaitStateView.nibInstance
+		waitStateView = WaitStateView.nibInstance
+		waitStateView?.translatesAutoresizingMaskIntoConstraints = false
 		processDataUpdates()
 
 		let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
