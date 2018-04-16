@@ -27,10 +27,27 @@ extension UIView {
 	func embed(view v: UIView) {
 		v.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(v)
-		v.topAnchor.constraint(equalTo: topAnchor).isActive = true
-		v.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-		v.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-		v.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+
+		let constraints: [NSLayoutConstraint] = [
+			v.topAnchor.constraint(equalTo: topAnchor),
+			v.leadingAnchor.constraint(equalTo: leadingAnchor),
+			v.bottomAnchor.constraint(equalTo: bottomAnchor),
+			v.trailingAnchor.constraint(equalTo: trailingAnchor)
+/*
+			{
+				let lc = v.bottomAnchor.constraint(equalTo: bottomAnchor)
+				lc.priority = UILayoutPriority(rawValue: 999)
+				return lc
+			}(),
+			{
+				let lc = v.trailingAnchor.constraint(equalTo: trailingAnchor)
+				lc.priority = UILayoutPriority(rawValue: 999)
+				return lc
+			}()
+*/
+		]
+		addConstraints(constraints)
+		constraints.forEach { $0.isActive = true }
 	}
 
 	func animateAlpha(to alpha: CGFloat, duration: TimeInterval = 0.3) {

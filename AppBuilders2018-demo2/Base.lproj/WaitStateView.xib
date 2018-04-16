@@ -17,8 +17,8 @@
             <rect key="frame" x="0.0" y="0.0" width="417" height="516"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-hS-ujK">
-                    <rect key="frame" x="156.5" y="257.5" width="104" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-hS-ujK">
+                    <rect key="frame" x="52" y="257.5" width="313" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -31,12 +31,11 @@
             <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="iJx-GT-gXa" firstAttribute="centerX" secondItem="2j3-hS-ujK" secondAttribute="centerX" id="46a-t8-Zr3"/>
-                <constraint firstItem="2j3-hS-ujK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TKY-Yo-E3p" secondAttribute="leadingMargin" constant="8" id="JZa-rA-AjS"/>
-                <constraint firstItem="2j3-hS-ujK" firstAttribute="centerX" secondItem="c86-OA-48a" secondAttribute="centerX" id="dZN-IT-ChQ"/>
+                <constraint firstItem="2j3-hS-ujK" firstAttribute="leading" secondItem="TKY-Yo-E3p" secondAttribute="leadingMargin" constant="32" id="JZa-rA-AjS"/>
                 <constraint firstItem="2j3-hS-ujK" firstAttribute="centerY" secondItem="c86-OA-48a" secondAttribute="centerY" id="ekx-Az-YaV"/>
                 <constraint firstItem="iJx-GT-gXa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="c86-OA-48a" secondAttribute="top" constant="8" id="fSO-2L-qCN"/>
                 <constraint firstItem="2j3-hS-ujK" firstAttribute="top" secondItem="iJx-GT-gXa" secondAttribute="bottom" constant="8" id="kL3-Oa-QVf"/>
-                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2j3-hS-ujK" secondAttribute="trailing" constant="8" id="lO5-Jw-zYv"/>
+                <constraint firstAttribute="trailingMargin" secondItem="2j3-hS-ujK" secondAttribute="trailing" constant="32" id="lO5-Jw-zYv"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
