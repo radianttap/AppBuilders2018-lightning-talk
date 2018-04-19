@@ -20,7 +20,7 @@ extension ViewController {
 		let waitStateView = WaitStateView.nibInstance
 		containerView.embed(view: waitStateView)
 
-//		containerWidthConstraint.isActive = false
-//		view.animateLayout()
+		containerWidthConstraint.isActive = false
+		view.animateLayout()
 	}
 }

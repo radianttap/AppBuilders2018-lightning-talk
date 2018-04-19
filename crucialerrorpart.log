@@ -1,8 +1,4 @@
 (
- "<NSLayoutConstraint:0x600000091df0 UILabel:0x7fae8f602990'Please wait...'.leading == AppBuilders2018_demo2.WaitStateView:0x7fae8f60b2d0.leadingMargin + 32   (active)>",
- "<NSLayoutConstraint:0x600000092020 AppBuilders2018_demo2.WaitStateView:0x7fae8f60b2d0.trailingMargin == UILabel:0x7fae8f602990'Please wait...'.trailing + 32   (active)>",
- 
- 
     "<NSLayoutConstraint:0x6080002884d0 
 		UIView:0x7fa935d106e0.width == 0   
 	(active)>",

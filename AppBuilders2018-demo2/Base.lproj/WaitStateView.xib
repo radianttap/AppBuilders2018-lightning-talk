@@ -35,7 +35,7 @@
                 <constraint firstItem="2j3-hS-ujK" firstAttribute="centerY" secondItem="c86-OA-48a" secondAttribute="centerY" id="ekx-Az-YaV"/>
                 <constraint firstItem="iJx-GT-gXa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="c86-OA-48a" secondAttribute="top" constant="8" id="fSO-2L-qCN"/>
                 <constraint firstItem="2j3-hS-ujK" firstAttribute="top" secondItem="iJx-GT-gXa" secondAttribute="bottom" constant="8" id="kL3-Oa-QVf"/>
-                <constraint firstAttribute="trailingMargin" secondItem="2j3-hS-ujK" secondAttribute="trailing" constant="32" id="lO5-Jw-zYv"/>
+                <constraint firstAttribute="trailingMargin" secondItem="2j3-hS-ujK" secondAttribute="trailing" priority="999" constant="32" id="lO5-Jw-zYv"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
